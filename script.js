@@ -121,7 +121,7 @@ function handleIronmanSnap() {
             hideCharacter(elements.ironmanSnap, elements.ironmanText);
             
             // Update status
-            showStatusMessage(`${state.dustedAvengers.length} Avengers have returned!`);
+            showStatusMessage(`All Avengers have returned!`);
             
             // Mark Iron Man snap as used
             state.ironmanSnapUsed = true;
