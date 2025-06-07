@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Snap Effect | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1>AVENGERS SNAP EFFECT</h1>
+        <div class="status" id="statusMessage">All Avengers are present</div>
+        
+        <div class="snap-buttons">
+            <button class="snap-button" id="thanosSnapButton">THANOS SNAP</button>
+            <button class="snap-button" id="ironmanSnapButton" disabled>IRON MAN SNAP</button>
+        </div>
+        
+        <div class="avengers-container" id="avengersContainer">
+            <!-- Avengers who disappeared in Infinity War -->
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="black.jpg" alt="Black Panther">
+                </div>
+                <div class="avenger-name">Black Panther</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="soldier.jpg" alt="Bucky Barnes">
+                </div>
+                <div class="avenger-name">Bucky Barnes</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="sam.jpg" alt="Falcon">
+                </div>
+                <div class="avenger-name">Falcon</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="iamgroot.jpg" alt="Groot">
+                </div>
+                <div class="avenger-name">Groot</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="witch.jpg" alt="Scarlet Witch">
+                </div>
+                <div class="avenger-name">Scarlet Witch</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="spidey.jpg" alt="Spider-Man">
+                </div>
+                <div class="avenger-name">Spider-Man</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="lord.jpg" alt="Star-Lord">
+                </div>
+                <div class="avenger-name">Star-Lord</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="strange.jpg" alt="Doctor Strange">
+                </div>
+                <div class="avenger-name">Doctor Strange</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="mantis.jpg" alt="Mantis">
+                </div>
+                <div class="avenger-name">Mantis</div>
+            </div>
+            <div class="avenger" data-survived="no">
+                <div class="avenger-img-container">
+                    <img src="drax.jpg" alt="Drax">
+                </div>
+                <div class="avenger-name">Drax</div>
+            </div>
+        </div>
+        
+        <p class="instructions">Click "Thanos Snap" to dust half the Avengers<br>Then click "Iron Man Snap" to bring them back</p>
+    </div>
+    
+    <div class="gauntlet-glow" id="gauntletGlow"></div>
+    <div class="ironman-glow" id="ironmanGlow"></div>
+    
+    <div class="character-container">
+        <img class="character-snap thanos-snap" id="thanosSnap" src="thanos.jpg" alt="Thanos snapping fingers">
+        <div class="character-text thanos-text" id="thanosText">I am inevitable</div>
+    </div>
+    
+    <div class="character-container">
+        <img class="character-snap ironman-snap" id="ironmanSnap" src="tony.jpg" alt="Iron Man with Infinity Stones">
+        <div class="character-text ironman-text" id="ironmanText">I am Iron Man</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
