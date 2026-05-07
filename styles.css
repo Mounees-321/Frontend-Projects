@@ -76,6 +76,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .avenger-img-container {
@@ -93,6 +95,11 @@ h1 {
 .avenger:hover .avenger-img-container {
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(110, 69, 226, 0.4);
+}
+
+.avenger:focus-visible .avenger-img-container {
+    transform: translateY(-10px);
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.7);
 }
 
 .avenger img {
@@ -349,6 +356,65 @@ h1 {
 
 .flicker {
     animation: flicker 0.5s linear;
+}
+
+/* Avenger detail page */
+.detail-wrapper {
+    max-width: 720px;
+    width: 95%;
+}
+
+.detail-card {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detail-image {
+    width: 240px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid var(--thanos-purple);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.detail-info {
+    text-align: left;
+    flex: 1;
+    min-width: 250px;
+}
+
+.detail-info h2 {
+    margin-bottom: 12px;
+    color: var(--ironman-gold);
+}
+
+.detail-info p {
+    margin-bottom: 14px;
+    line-height: 1.5;
+    color: #e9e9e9;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: linear-gradient(45deg, var(--thanos-purple), var(--thanos-dark));
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
 }
 
 /* Responsive adjustments */
